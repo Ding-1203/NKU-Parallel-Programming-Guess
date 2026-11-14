@@ -1,0 +1,26 @@
+{
+  "schema": "pcfg-benchmark-config-v1",
+  "variant": "smoke",
+  "comparison_class": "exact",
+  "require_clean": false,
+  "configure_preset": "benchmark",
+  "build_preset": "benchmark",
+  "paths": {
+    "training_input": "data/synthetic/benchmark-smoke.txt",
+    "binary": "build/benchmark/pcfg"
+  },
+  "correctness": {
+    "limit": 20,
+    "batch_size": 7
+  },
+  "headline": {
+    "limit": 20,
+    "batch_size": 7,
+    "cpu_set": "0",
+    "warmups": 0,
+    "repetitions": 1,
+    "cv_threshold": 0.03,
+    "bootstrap_seed": 4526,
+    "bootstrap_samples": 1000
+  }
+}

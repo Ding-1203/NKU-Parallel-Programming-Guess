@@ -1,0 +1,128 @@
+{
+  "created_at_utc": "2026-07-11T09:14:14.171098+00:00",
+  "excluded": [
+    "models",
+    "RockYou",
+    "full logs",
+    "gmon.out",
+    "gprof text",
+    "trace JSONL"
+  ],
+  "files": [
+    {
+      "path": "manifest/identity.json",
+      "sha256": "5327822533b2c06279db6299ea53f39ff9bba31cb6cab8995aaa3f9d1953e00c"
+    },
+    {
+      "path": "manifest/correctness-gate.json",
+      "sha256": "fbb5daad504a2fd00f25a371da6c55079f2986affc29ad463ebdd4a278789ba3"
+    },
+    {
+      "path": "manifest/profile.json",
+      "sha256": "1bb6fc3e5d8ed05786d28eaf1fca07f6ea37c377442d8d488520fde0c5a17050"
+    },
+    {
+      "path": "manifest/CMakeCache.txt",
+      "sha256": "91e9f841a0d2a93fd2cfb820e0ec01c8d206bff7811472e8ee5accdc9c603c20"
+    },
+    {
+      "path": "manifest/compile_commands.json",
+      "sha256": "5abbf0d3ca56c7020565a5aa6d66ac83f36ec9a2ee3f80c1775cc958a3c7ea2b"
+    },
+    {
+      "path": "runs/correctness.json",
+      "sha256": "df90f8da9cdcf050cfb579de51c18fc8048abffd99fff35d3450f5df990141fe"
+    },
+    {
+      "path": "summary/summary.json",
+      "sha256": "e75911fcf73463d67129d2ece8f5452f4ba03c91e7ba9757b1720af996f8cd1f"
+    },
+    {
+      "path": "summary/baseline-comparison.json",
+      "sha256": "318fe50bd1945f191e6138a826dd7cda43a2b0a4e3b2cd795f7103da33da666e"
+    },
+    {
+      "path": "summary/runs.csv",
+      "sha256": "d10d1b0b769b1c10eb33350a339c6ccff22a4f255b6915f0981faa70d1cec134"
+    },
+    {
+      "path": "summary/profiles.csv",
+      "sha256": "09f2b555c4af548ec721ebd41171e3e6fd72efdddabc1459ddf0b05e1dbb081f"
+    },
+    {
+      "path": "profiles/profiler.json",
+      "sha256": "b4d748732dd8602c2f14d60dcca16a39c73a4103a0b497a8a76390a394a59f7d"
+    },
+    {
+      "path": "report/baseline-bottleneck.md",
+      "sha256": "9ead6e9e374a10850748d007c710f9166040d22d7a2225a863ee030b26eacc1e"
+    },
+    {
+      "path": "report/baseline-bottleneck.html",
+      "sha256": "c32d42b6d5ac7c74d879fcc581367e622dc0567fef5a6263f45a4957737574b6"
+    },
+    {
+      "path": "report/visualization-manifest.json",
+      "sha256": "6a3da8f294cca4ec04a15b1444f215d763295212199794d54eb5a5ea64278f13"
+    },
+    {
+      "path": "runs/measured-01.json",
+      "sha256": "ab8c52d9a2d59236fc1a45901e451714249f45e044808f9beb20977878631c68"
+    },
+    {
+      "path": "runs/measured-02.json",
+      "sha256": "0c64227ff2d0dbc2a22e63169385d3507c282ddc77c0dae9a68abeb01e1749d4"
+    },
+    {
+      "path": "runs/measured-03.json",
+      "sha256": "34382a4d7cc13b0dcd313379a1a2dfb1a68c25d25bd20abe626f5c12834528b3"
+    },
+    {
+      "path": "runs/measured-04.json",
+      "sha256": "ccfc293792d595fbb21a1524d2557c8592a7e7ccd7fcce1657d982e938c47c51"
+    },
+    {
+      "path": "runs/measured-05.json",
+      "sha256": "e9a8acd678ab0849ea7016c4a7435e10b72e09ad5bc9647c0af5257b16b1c7bf"
+    },
+    {
+      "path": "runs/measured-06.json",
+      "sha256": "201f820ee85073d443d4132b38dc63a75b0538cb3e99eee2527eea7eb0a2bb33"
+    },
+    {
+      "path": "runs/measured-07.json",
+      "sha256": "51d3bad596622274c80b89224aaeab9d341d4a8e61e3c9cf7020c7929bf22507"
+    },
+    {
+      "path": "figures/profiler-hotspots.pdf",
+      "sha256": "57140e17ab1fb1ccf4ecc18ae013892acb865796348f19c8cd2d573cbcbd846f"
+    },
+    {
+      "path": "figures/quality-throughput.pdf",
+      "sha256": "299919e979d7c8293771b47c88fab6583f12be405e37bd6158e755a963931b29"
+    },
+    {
+      "path": "figures/queue-timeline.pdf",
+      "sha256": "1e841b817e8b472b16098e123f88a9eb7a8ffc0ad1150769121d464c9f5f465d"
+    },
+    {
+      "path": "figures/run-distribution.pdf",
+      "sha256": "afbe8982cca8b4748752ab82f20d6ed3f39a96d3489e927419a9af928fcd6b8f"
+    },
+    {
+      "path": "figures/speedup-exact.pdf",
+      "sha256": "dfd04fae7782c382c8c2357b28e37abb02191bc104d31b3985434546b800617c"
+    },
+    {
+      "path": "figures/stage-composition.pdf",
+      "sha256": "20315da51559b5313d4c83213e1e915b7bd740f7db2f45d11d1fd123b4066a3f"
+    },
+    {
+      "path": "figures/throughput-scaling.pdf",
+      "sha256": "2025c9a053ab8a9a9332282b3e6a637263261cb3f231814c57ed5a5b804b60c1"
+    }
+  ],
+  "rebuild_command": "./scripts/bench analyze --input benchmarks/reference/baseline-v1",
+  "schema": "pcfg-canonical-reference-v1",
+  "source_experiment": "/home/ding/parallel-programming/results/serial-heap-v1"
+}

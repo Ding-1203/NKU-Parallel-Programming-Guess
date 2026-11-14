@@ -1,0 +1,18 @@
+{
+  "schema": "pcfg-isa-check-v1",
+  "object": "src/md5_avx2.cpp.o",
+  "object_sha256": "9e189269d09b5f06b7ac6e11efa35fa5fc486c9801d291aa79720d8ea3df0990",
+  "target_function": "md5_batch8_avx2",
+  "compile_command": "/usr/bin/c++  -I/home/ding/parallel-programming/include -O2 -DNDEBUG -march=native -Wall -Wextra -Wpedantic -std=c++17 -march=x86-64 -o CMakeFiles/pcfg_core.dir/src/md5_avx2.cpp.o -c /home/ding/parallel-programming/src/md5_avx2.cpp",
+  "observed_instructions": [
+    "ymm",
+    "vpaddd",
+    "vpslld",
+    "vpsrld",
+    "vpand",
+    "vpxor",
+    "vzeroupper"
+  ],
+  "avx512_evidence": false,
+  "passed": true
+}

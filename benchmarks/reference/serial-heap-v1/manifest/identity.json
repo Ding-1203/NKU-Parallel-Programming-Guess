@@ -1,0 +1,143 @@
+{
+  "build": {
+    "binary": "/home/ding/parallel-programming/build/benchmark/pcfg",
+    "binary_sha256": "ae4a2226fa1edf8f9343b23d37df8e68f71fc84abfd625acc874628fdff7592f",
+    "build_artifacts": {
+      "CMakeCache.txt": {
+        "path": "manifest/CMakeCache.txt",
+        "sha256": "91e9f841a0d2a93fd2cfb820e0ec01c8d206bff7811472e8ee5accdc9c603c20"
+      },
+      "compile_commands.json": {
+        "path": "manifest/compile_commands.json",
+        "sha256": "5abbf0d3ca56c7020565a5aa6d66ac83f36ec9a2ee3f80c1775cc958a3c7ea2b"
+      }
+    },
+    "build_preset": "benchmark",
+    "configure_preset": "benchmark"
+  },
+  "captured_at_utc": "2026-07-11T09:05:44.112788+00:00",
+  "comparison_class": "exact",
+  "config_path": "benchmarks/configs/serial-heap-v1.json",
+  "config_sha256": "b2288a32b2bda86cf6e3183bf37e6e3c4f0ce5549fbd295950d0f520e0897f67",
+  "controller_isolation": {
+    "after": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "before": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "protected_target_and_siblings": [
+      0,
+      1
+    ],
+    "sibling_sources": {
+      "0": "0-1"
+    },
+    "status": "isolated"
+  },
+  "dataset": {
+    "bytes": 322063313,
+    "path": "/home/ding/parallel-programming/data/raw/rockyou.txt",
+    "sha256": "0c8a3224412f3c56240a06a4fd3d563c0f463dbf639c7cc53c8fd0e2bc137199"
+  },
+  "environment": {
+    "captured_at_utc": "2026-07-11T09:05:44.198442+00:00",
+    "commands": {
+      "cmake": "cmake version 3.22.1\n\nCMake suite maintained and supported by Kitware (kitware.com/cmake).",
+      "compiler": "c++ (Ubuntu 11.4.0-1ubuntu1~22.04.3) 11.4.0\nCopyright (C) 2021 Free Software Foundation, Inc.\nThis is free software; see the source for copying conditions.  There is NO\nwarranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.",
+      "kernel": "Linux ThinkBox-001 6.18.33.2-microsoft-standard-WSL2 #1 SMP PREEMPT_DYNAMIC Thu Jun 18 21:54:43 UTC 2026 x86_64 x86_64 x86_64 GNU/Linux",
+      "lscpu": "CPU CORE SOCKET NODE ONLINE MAXMHZ MINMHZ\n  0    0      0    0    yes      -      -\n  1    0      0    0    yes      -      -\n  2    1      0    0    yes      -      -\n  3    1      0    0    yes      -      -\n  4    2      0    0    yes      -      -\n  5    2      0    0    yes      -      -\n  6    3      0    0    yes      -      -\n  7    3      0    0    yes      -      -\n  8    4      0    0    yes      -      -\n  9    4      0    0    yes      -      -\n 10    5      0    0    yes      -      -\n 11    5      0    0    yes      -      -\n 12    6      0    0    yes      -      -\n 13    6      0    0    yes      -      -\n 14    7      0    0    yes      -      -\n 15    7      0    0    yes      -      -",
+      "lscpu_summary": "Architecture:                            x86_64\nCPU op-mode(s):                          32-bit, 64-bit\nAddress sizes:                           48 bits physical, 48 bits virtual\nByte Order:                              Little Endian\nCPU(s):                                  16\nOn-line CPU(s) list:                     0-15\nVendor ID:                               AuthenticAMD\nModel name:                              AMD Ryzen 7 8845H w/ Radeon 780M Graphics\nCPU family:                              25\nModel:                                   117\nThread(s) per core:                      2\nCore(s) per socket:                      8\nSocket(s):                               1\nStepping:                                2\nBogoMIPS:                                7585.32\nFlags:                                   fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc rep_good nopl xtopology tsc_reliable nonstop_tsc cpuid extd_apicid tsc_known_freq pni pclmulqdq ssse3 fma cx16 sse4_1 sse4_2 movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm cmp_legacy svm cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw topoext perfctr_core ssbd ibrs ibpb stibp vmmcall fsgsbase bmi1 avx2 smep bmi2 erms invpcid avx512f avx512dq rdseed adx smap avx512ifma clflushopt clwb avx512cd sha_ni avx512bw avx512vl xsaveopt xsavec xgetbv1 xsaves avx512_bf16 clzero xsaveerptr arat npt nrip_save tsc_scale vmcb_clean flushbyasid decodeassists pausefilter pfthreshold avx512vbmi umip avx512_vbmi2 gfni vaes vpclmulqdq avx512_vnni avx512_bitalg avx512_vpopcntdq rdpid fsrm\nVirtualization:                          AMD-V\nHypervisor vendor:                       Microsoft\nVirtualization type:                     full\nL1d cache:                               256 KiB (8 instances)\nL1i cache:                               256 KiB (8 instances)\nL2 cache:                                8 MiB (8 instances)\nL3 cache:                                16 MiB (1 instance)\nNUMA node(s):                            1\nNUMA node0 CPU(s):                       0-15\nVulnerability Gather data sampling:      Not affected\nVulnerability Ghostwrite:                Not affected\nVulnerability Indirect target selection: Not affected\nVulnerability Itlb multihit:             Not affected\nVulnerability L1tf:                      Not affected\nVulnerability Mds:                       Not affected\nVulnerability Meltdown:                  Not affected\nVulnerability Mmio stale data:           Not affected\nVulnerability Old microcode:             Not affected\nVulnerability Reg file data sampling:    Not affected\nVulnerability Retbleed:                  Not affected\nVulnerability Spec rstack overflow:      Vulnerable: Safe RET, no microcode\nVulnerability Spec store bypass:         Mitigation; Speculative Store Bypass disabled via prctl\nVulnerability Spectre v1:                Mitigation; usercopy/swapgs barriers and __user pointer sanitization\nVulnerability Spectre v2:                Mitigation; Retpolines; IBPB conditional; IBRS_FW; STIBP always-on; RSB filling; PBRSB-eIBRS Not affected; BHI Not affected\nVulnerability Srbds:                     Not affected\nVulnerability Tsa:                       Vulnerable: No microcode\nVulnerability Tsx async abort:           Not affected\nVulnerability Vmscape:                   Not affected",
+      "memory": "total        used        free      shared  buff/cache   available\nMem:     12165210112   620150784 11077021696     3678208   468037632 11358195712\nSwap:     3221225472           0  3221225472",
+      "python": "Python 3.10.12"
+    },
+    "dependency_versions": {
+      "jinja2": "3.0.3",
+      "matplotlib": "3.10.8",
+      "numpy": "2.2.6",
+      "pandas": "2.3.3",
+      "seaborn": "0.13.2"
+    },
+    "platform": "Linux-6.18.33.2-microsoft-standard-WSL2-x86_64-with-glibc2.35",
+    "process_affinity": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "python_executable": "/usr/bin/python3",
+    "tools": {
+      "/usr/bin/time": "/usr/bin/time",
+      "gprof": "/usr/bin/gprof",
+      "perf": "unavailable",
+      "strace": "/usr/bin/strace",
+      "taskset": "/usr/bin/taskset"
+    }
+  },
+  "git_describe": "baseline-v1.0-1-gcae396a",
+  "git_dirty": false,
+  "git_sha": "cae396a9b800ba5b108e20a7fecd67275da04a7b",
+  "git_status": [],
+  "model": {
+    "bytes": 173115058,
+    "expected_records": 32575499,
+    "path": "/home/ding/parallel-programming/artifacts/models/rockyou-full.pcfg",
+    "sha256": "b4b6cc82f6e99f596bfc4a26d33022b7c47b19daa6651d1f4d8e351ba692f8ef"
+  },
+  "protocol": {
+    "headline": {
+      "batch_size": 1000000,
+      "bootstrap_samples": 10000,
+      "bootstrap_seed": 4526,
+      "cpu_set": "0",
+      "cv_threshold": 0.03,
+      "limit": 10000000,
+      "repetitions": 7,
+      "warmups": 2
+    },
+    "parallelism": {
+      "processes": 1,
+      "threads": 1
+    }
+  },
+  "requested_headline_affinity": "0",
+  "schema": "pcfg-reference-identity-v1",
+  "variant": "serial-heap-v1",
+  "verified_headline_affinity": "0"
+}

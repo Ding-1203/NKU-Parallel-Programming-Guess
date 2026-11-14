@@ -1,0 +1,287 @@
+{
+  "gprof": {
+    "binary_sha256": "5cae61fda8ba951798498e164d422a649c17f427d8b58f250c5acc27cde5a073",
+    "limit": 10000000,
+    "top_functions": [
+      {
+        "calls": 78951,
+        "cumulative_seconds": 2.51,
+        "name": "void std::vector<pcfg::SearchState, std::allocator<pcfg::SearchState> >::_M_insert_aux<pcfg::SearchState>(__gnu_cxx::__normal_iterator<pcfg::SearchState*, std::vector<pcfg::SearchState, std::allocator<pcfg::SearchState> > >, pcfg::SearchState&&)",
+        "percent_time": 44.42,
+        "self_ms_per_call": 0.0,
+        "self_seconds": 2.51,
+        "total_ms_per_call": 0.0
+      },
+      {
+        "calls": 10000000,
+        "cumulative_seconds": 4.19,
+        "name": "pcfg::md5(std::basic_string_view<char, std::char_traits<char> >)",
+        "percent_time": 29.73,
+        "self_ms_per_call": 0.0,
+        "self_seconds": 1.68,
+        "total_ms_per_call": 0.0
+      },
+      {
+        "calls": 2704922,
+        "cumulative_seconds": 4.71,
+        "name": "pcfg::Sha256::transform(unsigned char const*)",
+        "percent_time": 9.2,
+        "self_ms_per_call": 0.0,
+        "self_seconds": 0.52,
+        "total_ms_per_call": 0.0
+      },
+      {
+        "calls": 35437270,
+        "cumulative_seconds": 5.02,
+        "name": "void std::vector<unsigned char, std::allocator<unsigned char> >::_M_realloc_insert<unsigned char>(__gnu_cxx::__normal_iterator<unsigned char*, std::vector<unsigned char, std::allocator<unsigned char> > >, unsigned char&&)",
+        "percent_time": 5.49,
+        "self_ms_per_call": 0.0,
+        "self_seconds": 0.31,
+        "total_ms_per_call": 0.0
+      },
+      {
+        "calls": 1,
+        "cumulative_seconds": 5.31,
+        "name": "pcfg::ModelStore::load(std::filesystem::__cxx11::path const&)",
+        "percent_time": 5.13,
+        "self_ms_per_call": 0.29,
+        "self_seconds": 0.29,
+        "total_ms_per_call": 0.81
+      },
+      {
+        "calls": 272,
+        "cumulative_seconds": 5.41,
+        "name": "pcfg::SerialSampler::generate_range(pcfg::SearchState const&, unsigned long, unsigned long, std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >&) const",
+        "percent_time": 1.77,
+        "self_ms_per_call": 0.0,
+        "self_seconds": 0.1,
+        "total_ms_per_call": 0.0
+      },
+      {
+        "calls": 10,
+        "cumulative_seconds": 5.48,
+        "name": "pcfg::CandidateConsumer::consume(std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > const&, unsigned long)",
+        "percent_time": 1.24,
+        "self_ms_per_call": 0.01,
+        "self_seconds": 0.07,
+        "total_ms_per_call": 0.21
+      },
+      {
+        "calls": 263,
+        "cumulative_seconds": 5.52,
+        "name": "pcfg::SerialSampler::pop()",
+        "percent_time": 0.71,
+        "self_ms_per_call": 0.0,
+        "self_seconds": 0.04,
+        "total_ms_per_call": 0.0
+      },
+      {
+        "calls": 1,
+        "cumulative_seconds": 5.55,
+        "name": "(anonymous namespace)::run_sample(int, char**)",
+        "percent_time": 0.53,
+        "self_ms_per_call": 0.03,
+        "self_seconds": 0.03,
+        "total_ms_per_call": 5.62
+      },
+      {
+        "calls": null,
+        "cumulative_seconds": 5.58,
+        "name": "_init",
+        "percent_time": 0.53,
+        "self_ms_per_call": null,
+        "self_seconds": 0.03,
+        "total_ms_per_call": null
+      },
+      {
+        "calls": 79003,
+        "cumulative_seconds": 5.6,
+        "name": "pcfg::SerialSampler::probability(pcfg::SearchState const&) const",
+        "percent_time": 0.35,
+        "self_ms_per_call": 0.0,
+        "self_seconds": 0.02,
+        "total_ms_per_call": 0.0
+      },
+      {
+        "calls": 33875,
+        "cumulative_seconds": 5.62,
+        "name": "pcfg::SegmentKey::operator==(pcfg::SegmentKey const&) const",
+        "percent_time": 0.35,
+        "self_ms_per_call": 0.0,
+        "self_seconds": 0.02,
+        "total_ms_per_call": 0.0
+      },
+      {
+        "calls": 964261,
+        "cumulative_seconds": 5.63,
+        "name": "std::__cxx11::basic_stringbuf<char, std::char_traits<char>, std::allocator<char> >::~basic_stringbuf()",
+        "percent_time": 0.18,
+        "self_ms_per_call": 0.0,
+        "self_seconds": 0.01,
+        "total_ms_per_call": 0.0
+      },
+      {
+        "calls": 18,
+        "cumulative_seconds": 5.64,
+        "name": "void std::vector<pcfg::SearchState, std::allocator<pcfg::SearchState> >::_M_realloc_insert<pcfg::SearchState>(__gnu_cxx::__normal_iterator<pcfg::SearchState*, std::vector<pcfg::SearchState, std::allocator<pcfg::SearchState> > >, pcfg::SearchState&&)",
+        "percent_time": 0.18,
+        "self_ms_per_call": 0.0,
+        "self_seconds": 0.01,
+        "total_ms_per_call": 0.0
+      },
+      {
+        "calls": 1,
+        "cumulative_seconds": 5.65,
+        "name": "pcfg::Model::~Model()",
+        "percent_time": 0.18,
+        "self_ms_per_call": 0.01,
+        "self_seconds": 0.01,
+        "total_ms_per_call": 0.01
+      },
+      {
+        "calls": 964007,
+        "cumulative_seconds": 5.65,
+        "name": "pcfg::Model::segment_index(pcfg::SegmentKey const&) const",
+        "percent_time": 0.0,
+        "self_ms_per_call": 0.0,
+        "self_seconds": 0.0,
+        "total_ms_per_call": 0.0
+      },
+      {
+        "calls": 964007,
+        "cumulative_seconds": 5.65,
+        "name": "pcfg::Model::segment(pcfg::SegmentKey const&) const",
+        "percent_time": 0.0,
+        "self_ms_per_call": 0.0,
+        "self_seconds": 0.0,
+        "total_ms_per_call": 0.0
+      },
+      {
+        "calls": 79003,
+        "cumulative_seconds": 5.65,
+        "name": "pcfg::SerialSampler::insert(pcfg::SearchState)",
+        "percent_time": 0.0,
+        "self_ms_per_call": 0.0,
+        "self_seconds": 0.0,
+        "total_ms_per_call": 0.0
+      },
+      {
+        "calls": 48763,
+        "cumulative_seconds": 5.65,
+        "name": "pcfg::SegmentKey::operator<(pcfg::SegmentKey const&) const",
+        "percent_time": 0.0,
+        "self_ms_per_call": 0.0,
+        "self_seconds": 0.0,
+        "total_ms_per_call": 0.0
+      },
+      {
+        "calls": 19110,
+        "cumulative_seconds": 5.65,
+        "name": "void std::vector<pcfg::SegmentKey, std::allocator<pcfg::SegmentKey> >::_M_realloc_insert<pcfg::SegmentKey>(__gnu_cxx::__normal_iterator<pcfg::SegmentKey*, std::vector<pcfg::SegmentKey, std::allocator<pcfg::SegmentKey> > >, pcfg::SegmentKey&&)",
+        "percent_time": 0.0,
+        "self_ms_per_call": 0.0,
+        "self_seconds": 0.0,
+        "total_ms_per_call": 0.0
+      },
+      {
+        "calls": 544,
+        "cumulative_seconds": 5.65,
+        "name": "pcfg::SerialSampler::last_segment_size(pcfg::SearchState const&) const",
+        "percent_time": 0.0,
+        "self_ms_per_call": 0.0,
+        "self_seconds": 0.0,
+        "total_ms_per_call": 0.0
+      },
+      {
+        "calls": 282,
+        "cumulative_seconds": 5.65,
+        "name": "std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::reserve(unsigned long)",
+        "percent_time": 0.0,
+        "self_ms_per_call": 0.0,
+        "self_seconds": 0.0,
+        "total_ms_per_call": 0.0
+      },
+      {
+        "calls": 262,
+        "cumulative_seconds": 5.65,
+        "name": "pcfg::SerialSampler::expand(pcfg::SearchState const&)",
+        "percent_time": 0.0,
+        "self_ms_per_call": 0.0,
+        "self_seconds": 0.0,
+        "total_ms_per_call": 0.0
+      },
+      {
+        "calls": 254,
+        "cumulative_seconds": 5.65,
+        "name": "std::vector<pcfg::SegmentValue, std::allocator<pcfg::SegmentValue> >::reserve(unsigned long)",
+        "percent_time": 0.0,
+        "self_ms_per_call": 0.0,
+        "self_seconds": 0.0,
+        "total_ms_per_call": 0.0
+      },
+      {
+        "calls": 11,
+        "cumulative_seconds": 5.65,
+        "name": "(anonymous namespace)::print_usage(char const*)",
+        "percent_time": 0.0,
+        "self_ms_per_call": 0.0,
+        "self_seconds": 0.0,
+        "total_ms_per_call": 0.0
+      },
+      {
+        "calls": 10,
+        "cumulative_seconds": 5.65,
+        "name": "pcfg::SerialSampler::sample_batch(unsigned long)",
+        "percent_time": 0.0,
+        "self_ms_per_call": 0.0,
+        "self_seconds": 0.0,
+        "total_ms_per_call": 0.01
+      },
+      {
+        "calls": 10,
+        "cumulative_seconds": 5.65,
+        "name": "pcfg::SerialSampler::empty() const",
+        "percent_time": 0.0,
+        "self_ms_per_call": 0.0,
+        "self_seconds": 0.0,
+        "total_ms_per_call": 0.0
+      },
+      {
+        "calls": 5,
+        "cumulative_seconds": 5.65,
+        "name": "(anonymous namespace)::require_value(int, char**, int&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)",
+        "percent_time": 0.0,
+        "self_ms_per_call": 0.0,
+        "self_seconds": 0.0,
+        "total_ms_per_call": 0.0
+      },
+      {
+        "calls": 5,
+        "cumulative_seconds": 5.65,
+        "name": "std::unique_ptr<std::filesystem::__cxx11::path::_List::_Impl, std::filesystem::__cxx11::path::_List::_Impl_deleter>::~unique_ptr()",
+        "percent_time": 0.0,
+        "self_ms_per_call": 0.0,
+        "self_seconds": 0.0,
+        "total_ms_per_call": 0.0
+      },
+      {
+        "calls": 3,
+        "cumulative_seconds": 5.65,
+        "name": "pcfg::instrumentation_name[abi:cxx11](pcfg::InstrumentationMode)",
+        "percent_time": 0.0,
+        "self_ms_per_call": 0.0,
+        "self_seconds": 0.0,
+        "total_ms_per_call": 0.0
+      }
+    ]
+  },
+  "perf": {
+    "status": "unavailable"
+  },
+  "schema": "pcfg-profiler-summary-v1",
+  "strace": {
+    "limit": 1000000,
+    "status": "captured",
+    "summary": "profiles/strace-summary.txt"
+  }
+}

@@ -1,0 +1,106 @@
+{
+  "schema": "pcfg-mpi-benchmark-config-v1",
+  "variant": "mpi-fused-exact-v1",
+  "comparison_class": "exact",
+  "require_clean": true,
+  "configure_preset": "mpi-benchmark",
+  "build_preset": "mpi-benchmark",
+  "paths": {
+    "dataset": "data/raw/rockyou.txt",
+    "model": "artifacts/models/rockyou-full.pcfg",
+    "binary": "build/mpi-benchmark/pcfg_mpi"
+  },
+  "reference": {
+    "baseline_tag": "openmp-fused-v1.0",
+    "dataset_sha256": "0c8a3224412f3c56240a06a4fd3d563c0f463dbf639c7cc53c8fd0e2bc137199",
+    "model_sha256": "b4b6cc82f6e99f596bfc4a26d33022b7c47b19daa6651d1f4d8e351ba692f8ef",
+    "model_records": 32575499,
+    "estimated_rank_rss_mib": 700
+  },
+  "correctness": {
+    "limit": 10000000,
+    "batch_size": 1000000,
+    "test_data": "data/raw/rockyou.txt",
+    "test_limit": 1000000,
+    "expected": {
+      "generated": 10000000,
+      "hash_guard": 3208840153712495241,
+      "sig1": 17743404526985606959,
+      "sig2": 10114221552619739567,
+      "candidate_hits": 341018,
+      "cracked_unique": 341018
+    }
+  },
+  "sustained": {
+    "limit": 100000000,
+    "batch_size": 1000000,
+    "calibration_warmups": 1,
+    "calibration_repetitions": 3,
+    "confirmation_warmups": 2,
+    "confirmation_repetitions": 7
+  },
+  "legacy": {
+    "limit": 10000000,
+    "batch_size": 1000000,
+    "warmups": 2,
+    "repetitions": 7
+  },
+  "statistics": {
+    "cv_threshold": 0.05,
+    "bootstrap_seed": 4526,
+    "bootstrap_samples": 10000,
+    "selection_margin": 0.03
+  },
+  "configurations": [
+    {
+      "name": "1x8",
+      "ranks": 1,
+      "threads_per_rank": 8,
+      "cpu_sets": [
+        "0,2,4,6,8,10,12,14"
+      ]
+    },
+    {
+      "name": "2x4",
+      "ranks": 2,
+      "threads_per_rank": 4,
+      "cpu_sets": [
+        "0,2,4,6",
+        "8,10,12,14"
+      ]
+    },
+    {
+      "name": "4x2",
+      "ranks": 4,
+      "threads_per_rank": 2,
+      "cpu_sets": [
+        "0,2",
+        "4,6",
+        "8,10",
+        "12,14"
+      ]
+    },
+    {
+      "name": "8x1",
+      "ranks": 8,
+      "threads_per_rank": 1,
+      "cpu_sets": [
+        "0",
+        "2",
+        "4",
+        "6",
+        "8",
+        "10",
+        "12",
+        "14"
+      ]
+    }
+  ],
+  "estimates_seconds": {
+    "correctness": 60,
+    "calibration": 180,
+    "confirmation": 180,
+    "legacy": 60,
+    "profiling": 60
+  }
+}

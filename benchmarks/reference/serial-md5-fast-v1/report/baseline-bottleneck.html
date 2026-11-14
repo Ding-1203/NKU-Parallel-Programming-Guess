@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>serial-md5-fast-v1</title>
+<style>
+:root{color-scheme:light dark;--bg:#f8fafc;--fg:#172033;--muted:#566178;--card:#fff;--line:#d8dee9;--accent:#2563eb}
+@media(prefers-color-scheme:dark){:root{--bg:#0f172a;--fg:#e5e7eb;--muted:#a8b1c3;--card:#172033;--line:#334155;--accent:#60a5fa}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font:15px/1.55 system-ui,sans-serif}
+main{max-width:1100px;margin:auto;padding:28px 20px 60px}h1,h2{line-height:1.2}h2{margin-top:34px}
+.meta{color:var(--muted)}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:16px}.metric{font-size:1.55rem;font-weight:600}
+table{width:100%;border-collapse:collapse;background:var(--card)}th,td{padding:8px 10px;border:1px solid var(--line);text-align:right}th:first-child,td:first-child{text-align:left}
+.figure{margin:22px 0;background:white;border-radius:8px;padding:8px;overflow:hidden}.figure svg{width:100%;height:auto;display:block}
+code{background:var(--card);padding:2px 4px;border-radius:4px}ul{padding-left:22px}
+</style>
+</head>
+<body><main>
+<h1>serial-md5-fast-v1</h1>
+<p class="meta">可审计串行基准 · headline 与 profiling 分离 · 生成于 2026-07-11T09:56:05.053133+00:00</p>
+<div class="grid">
+<div class="card"><div>core_total median</div><div class="metric">1.330143 s</div><div>95% CI [1.323553, 1.337340]</div></div>
+<div class="card"><div>throughput</div><div class="metric">7.518 M/s</div><div>CV 1.87%</div></div>
+<div class="card"><div>correctness gate</div><div class="metric">PASS</div><div>exact comparison class</div></div>
+</div>
+<h2>运行稳定性</h2><div class="figure"><a href="../figures/run-distribution.pdf">run-distribution.pdf</a></div>
+<h2>Exact speedup 契约</h2><div class="figure"><a href="../figures/speedup-exact.pdf">speedup-exact.pdf</a></div>
+<h2>阶段与规模</h2><div class="figure"><a href="../figures/stage-composition.pdf">stage-composition.pdf</a></div><div class="figure"><a href="../figures/throughput-scaling.pdf">throughput-scaling.pdf</a></div>
+<h2>批处理与热点</h2><div class="figure"></div><div class="figure"><a href="../figures/profiler-hotspots.pdf">profiler-hotspots.pdf</a></div>
+<h2>队列迁移</h2><div class="figure"><a href="../figures/queue-timeline.pdf">queue-timeline.pdf</a></div>
+<h2>质量–吞吐锚点</h2><div class="figure"><a href="../figures/quality-throughput.pdf">quality-throughput.pdf</a></div>
+<h2>统计摘要</h2>
+<table><tr><th>metric</th><th>median</th><th>IQR</th><th>MAD</th><th>CV</th><th>range</th></tr>
+<tr><td>core_total (s)</td><td>1.330143</td><td>0.009694</td><td>0.006589</td><td>1.87%</td><td>0.082611</td></tr></table>
+<h2>瓶颈结论</h2><ul>
+<li>sampler_init 0.010s (0.8% of detailed core).</li><li>vector movement estimate: 0 elements.</li><li>scalar MD5: 122.2 ns/candidate.</li><li>gprof top: pcfg::(anonymous namespace)::compress_block(std::array<unsigned int, 4ul>&, unsigned char const*) (45.8%).</li>
+</ul>
+<p class="meta">图表仅使用本地 JSON；无在线 CDN。原始 trace、gmon 与完整日志不进入 canonical Git 包。</p>
+</main></body></html>

@@ -1,0 +1,27 @@
+{
+  "schema": "pcfg-baseline-result-v2",
+  "mode": "openmp-md5",
+  "instrumentation": "off",
+  "detailed_available": false,
+  "model_path": "/home/ding/parallel-programming/artifacts/models/rockyou-full.pcfg",
+  "model_records": 32575499,
+  "limit": 10000000,
+  "batch_size": 1000000,
+  "threads_requested": 4,
+  "threads_used": 4,
+  "signature_enabled": true,
+  "verification_enabled": true,
+  "generated": 10000000,
+  "candidate_hits": 341018,
+  "cracked_unique": 341018,
+  "sig1": 17743404526985606959,
+  "sig2": 10114221552619739567,
+  "hash_guard": 3208840153712495241,
+  "timing_seconds": {
+    "load_model": 1.068545687,
+    "core_total": 3.427533554,
+    "end_to_end": 4.496085037,
+    "detailed": null
+  },
+  "sampler_counters": null
+}

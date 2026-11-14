@@ -1,0 +1,128 @@
+{
+  "created_at_utc": "2026-07-11T08:26:26.779804+00:00",
+  "excluded": [
+    "models",
+    "RockYou",
+    "full logs",
+    "gmon.out",
+    "gprof text",
+    "trace JSONL"
+  ],
+  "files": [
+    {
+      "path": "manifest/identity.json",
+      "sha256": "8118303bb8c7bfbe820124c6213be8bc35994c8ed396e22e70f7eecf8b6bae4a"
+    },
+    {
+      "path": "manifest/correctness-gate.json",
+      "sha256": "fbb5daad504a2fd00f25a371da6c55079f2986affc29ad463ebdd4a278789ba3"
+    },
+    {
+      "path": "manifest/profile.json",
+      "sha256": "de8cfc72ea00ff97754ed32c07661fdf497235163fb84801f951ce55abc34491"
+    },
+    {
+      "path": "manifest/CMakeCache.txt",
+      "sha256": "91e9f841a0d2a93fd2cfb820e0ec01c8d206bff7811472e8ee5accdc9c603c20"
+    },
+    {
+      "path": "manifest/compile_commands.json",
+      "sha256": "5abbf0d3ca56c7020565a5aa6d66ac83f36ec9a2ee3f80c1775cc958a3c7ea2b"
+    },
+    {
+      "path": "runs/correctness.json",
+      "sha256": "d62c4631f7b25f32f2778fec8af2e4773a1979e5557f28af45d6464e27c26965"
+    },
+    {
+      "path": "summary/summary.json",
+      "sha256": "080e83c32db451a9c712f3221d919bef335b7602844afc42763a209e49e8c686"
+    },
+    {
+      "path": "summary/runs.csv",
+      "sha256": "621e27015f48b0f9ce1d47e22d07b042ddd5f1b27b6a9fd2ea3e015cc9a7c0e1"
+    },
+    {
+      "path": "summary/profiles.csv",
+      "sha256": "b54f3c9891e074c417e3022a60d5514947d14e143fd8babc779ba565411ba900"
+    },
+    {
+      "path": "profiles/profiler.json",
+      "sha256": "0cd1a8015756643c3494ceac7c228cbe3bd1f72e442b57e11e64e125d264ce7e"
+    },
+    {
+      "path": "report/baseline-bottleneck.md",
+      "sha256": "378272d78a5d8653fdde845a5ea9eb103cd4b2592acb1216d29e8526de1dd00d"
+    },
+    {
+      "path": "report/baseline-bottleneck.html",
+      "sha256": "439216e84a53e2fa9cac24c001dbd57c462729761faccdabb753d149f81c67d3"
+    },
+    {
+      "path": "report/visualization-manifest.json",
+      "sha256": "462840b6014aac38c8556983b6f40ea4f46afb12946faada848c6941a90b2b65"
+    },
+    {
+      "path": "runs/measured-01.json",
+      "sha256": "fc1270a3849f52bf0795f0342d944238cf32b8846b15b02a800db35f0358ff68"
+    },
+    {
+      "path": "runs/measured-02.json",
+      "sha256": "026809df43d257c7b00f85ba4429f0d52b736ca7938b83c2a9dee0c9284bb1df"
+    },
+    {
+      "path": "runs/measured-03.json",
+      "sha256": "b45ed59a91d0ba52ac57d09d4ee8a430524bae873663610897baae322a73c10f"
+    },
+    {
+      "path": "runs/measured-04.json",
+      "sha256": "a0dc50aefbd411063b517450ec213dbc4ead883f94a9bb9a8fa0dcfcbb0095bc"
+    },
+    {
+      "path": "runs/measured-05.json",
+      "sha256": "d5ae546cfc3beda683d7a9c50f86c938007ff3a278157d604bba2b805dd72c5e"
+    },
+    {
+      "path": "runs/measured-06.json",
+      "sha256": "15a0464f8b52d134b8ebe823272175629d4d9ac2c5d88105ded98b7405edb4b6"
+    },
+    {
+      "path": "runs/measured-07.json",
+      "sha256": "fb2a8e8dd75b300896c104a8ed67d6523c1ce83c6943059416fc5dfb1a5fcf76"
+    },
+    {
+      "path": "figures/batch-sensitivity.pdf",
+      "sha256": "202818cb985e97601093717f8a7500fac1b39b933a54f298fbb201ee83779125"
+    },
+    {
+      "path": "figures/profiler-hotspots.pdf",
+      "sha256": "78f3aa15522ae9c0a65cf0582429f4cb2e36a416d05c68526a9ed0e65bf103c3"
+    },
+    {
+      "path": "figures/quality-throughput.pdf",
+      "sha256": "4395b574ba112e9b0d149ac8b47fd85922b6629b05c4e52c6ddbc82c1b7e27ee"
+    },
+    {
+      "path": "figures/queue-timeline.pdf",
+      "sha256": "022c46110b74657984ab1838e06440b9d2b04b8b610049c06c639cdaf7dd796a"
+    },
+    {
+      "path": "figures/run-distribution.pdf",
+      "sha256": "2c9ca9cd1c5706057eb5cadbf62fad270bc60e3f79ae38b61673a9cd7e04542b"
+    },
+    {
+      "path": "figures/speedup-exact.pdf",
+      "sha256": "da0e0e171f841d1f6708c3f04aa72e71c09ccccade390ba0da5b4d4760886086"
+    },
+    {
+      "path": "figures/stage-composition.pdf",
+      "sha256": "744f5e5369603e61e012ac2b772472b56cbd57765c6de892a2b239294c076da0"
+    },
+    {
+      "path": "figures/throughput-scaling.pdf",
+      "sha256": "bfff59e16cbfedc39887d686d7d06fa9015d64cb5acab9aec2a6e33e8b6aa36a"
+    }
+  ],
+  "rebuild_command": "./scripts/bench analyze --input benchmarks/reference/baseline-v1",
+  "schema": "pcfg-canonical-reference-v1",
+  "source_experiment": "/home/ding/parallel-programming/results/baseline-v1-isolated"
+}

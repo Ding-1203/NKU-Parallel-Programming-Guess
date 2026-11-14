@@ -1,0 +1,51 @@
+{
+  "candidate": "openmp-fused-v1",
+  "comparisons": [
+    {
+      "baseline": "openmp-md5-v1",
+      "candidate": "openmp-fused-v1",
+      "ci": [
+        1.870056163265803,
+        2.0431712750169053
+      ],
+      "speedup": 1.954613480784509
+    },
+    {
+      "baseline": "serial-md5-avx2-v1",
+      "candidate": "openmp-fused-v1",
+      "ci": [
+        4.188163434656578,
+        4.676128514379294
+      ],
+      "speedup": 4.474105421956952
+    },
+    {
+      "baseline": "serial-md5-fast-v1",
+      "candidate": "openmp-fused-v1",
+      "ci": [
+        10.571934481322847,
+        11.527609356007353
+      ],
+      "speedup": 11.074178362167167
+    },
+    {
+      "baseline": "serial-heap-v1",
+      "candidate": "openmp-fused-v1",
+      "ci": [
+        16.715804559250035,
+        18.28784450394144
+      ],
+      "speedup": 17.48582907255578
+    },
+    {
+      "baseline": "baseline-v1",
+      "candidate": "openmp-fused-v1",
+      "ci": [
+        37.7113483644122,
+        41.41393003040661
+      ],
+      "speedup": 39.665833530891874
+    }
+  ],
+  "schema": "pcfg-direct-comparisons-v1"
+}

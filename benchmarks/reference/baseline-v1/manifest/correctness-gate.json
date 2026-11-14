@@ -1,0 +1,13 @@
+{
+  "comparison_class": "exact",
+  "fields": {
+    "candidate_hits": 341018,
+    "cracked_unique": 341018,
+    "generated": 10000000,
+    "hash_guard": 3208840153712495241,
+    "sig1": 17743404526985606959,
+    "sig2": 10114221552619739567
+  },
+  "passed": true,
+  "schema": "pcfg-correctness-gate-v1"
+}

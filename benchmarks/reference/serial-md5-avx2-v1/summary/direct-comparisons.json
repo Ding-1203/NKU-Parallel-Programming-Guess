@@ -1,0 +1,51 @@
+{
+  "schema": "pcfg-direct-comparisons-v1",
+  "canonical_references": [
+    "baseline-v1.0",
+    "serial-heap-v1.0",
+    "serial-md5-fast-v1.0"
+  ],
+  "candidate": "serial-md5-avx2-v1",
+  "comparisons": [
+    {
+      "label": "Scalar fast vs Heap",
+      "baseline": "serial-heap-v1",
+      "candidate": "serial-md5-fast-v1",
+      "speedup": 1.5789730398683846,
+      "ci": [
+        1.556618961640283,
+        1.6119716023376254
+      ]
+    },
+    {
+      "label": "AVX2 vs Scalar fast",
+      "baseline": "serial-md5-fast-v1",
+      "candidate": "serial-md5-avx2-v1",
+      "speedup": 2.4751715298928687,
+      "ci": [
+        2.445415250183451,
+        2.5451465283899815
+      ]
+    },
+    {
+      "label": "AVX2 vs Heap",
+      "baseline": "serial-heap-v1",
+      "candidate": "serial-md5-avx2-v1",
+      "speedup": 3.9082291147506227,
+      "ci": [
+        3.8502937475472545,
+        4.058182913395888
+      ]
+    },
+    {
+      "label": "AVX2 vs original Baseline",
+      "baseline": "baseline-v1",
+      "candidate": "serial-md5-avx2-v1",
+      "speedup": 8.865645707906058,
+      "ci": [
+        8.74634944793675,
+        9.15782574755529
+      ]
+    }
+  ]
+}

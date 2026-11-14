@@ -1,0 +1,14 @@
+/build/
+/data/raw/*
+!/data/raw/.gitkeep
+/artifacts/models/*
+!/artifacts/models/.gitkeep
+/results/*
+!/results/.gitkeep
+*.pcfg
+*.log
+*:Zone.Identifier
+.vscode/
+__pycache__/
+*.py[cod]
+gmon.out

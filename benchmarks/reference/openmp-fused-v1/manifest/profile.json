@@ -1,0 +1,25 @@
+{
+  "binary_sha256": "7c361c39b0133c37daf3a892f8006c7afde1f84af8931e9c946f8cead299c504",
+  "captured_at_utc": "2026-07-11T13:40:32.389039+00:00",
+  "git_dirty": false,
+  "git_sha": "d2bb066ed5937dc6ee9013ffce75571c0ed0cd3c",
+  "model_sha256": "b4b6cc82f6e99f596bfc4a26d33022b7c47b19daa6651d1f4d8e351ba692f8ef",
+  "protocol": {
+    "batch_repetitions": 0,
+    "batch_sizes": [],
+    "gprof_limit": 10000000,
+    "gprof_threads": 1,
+    "scale_limits": [],
+    "scale_repetitions": 0,
+    "scale_warmups": 0,
+    "strace": false,
+    "strace_limit": 1000000,
+    "thread_details": [
+      1,
+      8
+    ],
+    "thread_trace": false,
+    "trace_interval": 100000
+  },
+  "schema": "pcfg-profile-manifest-v1"
+}

@@ -1,0 +1,66 @@
+{
+  "charts": [
+    {
+      "formats": [
+        "pdf"
+      ],
+      "name": "batch-sensitivity"
+    },
+    {
+      "formats": [
+        "pdf"
+      ],
+      "name": "profiler-hotspots"
+    },
+    {
+      "formats": [
+        "pdf"
+      ],
+      "name": "quality-throughput"
+    },
+    {
+      "formats": [
+        "pdf"
+      ],
+      "name": "queue-timeline"
+    },
+    {
+      "formats": [
+        "pdf"
+      ],
+      "name": "run-distribution"
+    },
+    {
+      "formats": [
+        "pdf"
+      ],
+      "name": "speedup-exact"
+    },
+    {
+      "formats": [
+        "pdf"
+      ],
+      "name": "stage-composition"
+    },
+    {
+      "formats": [
+        "pdf"
+      ],
+      "name": "throughput-scaling"
+    }
+  ],
+  "command": "./scripts/bench analyze --input /home/ding/parallel-programming/results/baseline-v1-isolated",
+  "conditional_contracts": {
+    "quality_frontier": "relaxed variants appear separately when supplied",
+    "speedup": "exact comparison_class only",
+    "strong_scaling": "worker/process series appear when future experiment rows provide them"
+  },
+  "schema": "pcfg-visualization-manifest-v1",
+  "sources": {
+    "correctness": "manifest/correctness-gate.json",
+    "detailed": "profiles/scale/**/run-*.json and profiles/batch/**/run-*.json",
+    "headline": "runs/measured-*.json",
+    "profiler": "profiles/profiler.json",
+    "timeline": "profiles/scale/limit-*/trace.jsonl"
+  }
+}

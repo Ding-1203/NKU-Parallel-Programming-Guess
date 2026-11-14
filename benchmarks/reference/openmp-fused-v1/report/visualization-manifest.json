@@ -1,0 +1,55 @@
+{
+  "charts": [
+    {
+      "formats": [
+        "pdf"
+      ],
+      "name": "cumulative-exact-speedup"
+    },
+    {
+      "formats": [
+        "pdf"
+      ],
+      "name": "guard-bottleneck"
+    },
+    {
+      "formats": [
+        "pdf"
+      ],
+      "name": "memory-working-set"
+    },
+    {
+      "formats": [
+        "pdf"
+      ],
+      "name": "run-distribution"
+    },
+    {
+      "formats": [
+        "pdf"
+      ],
+      "name": "strong-scaling"
+    },
+    {
+      "formats": [
+        "pdf"
+      ],
+      "name": "thread-stage-composition"
+    }
+  ],
+  "command": "./scripts/bench analyze --input results/openmp-fused-v1 --compare benchmarks/reference/openmp-md5-v1 --compare benchmarks/reference/serial-md5-avx2-v1 --compare benchmarks/reference/serial-md5-fast-v1 --compare benchmarks/reference/serial-heap-v1 --compare benchmarks/reference/baseline-v1",
+  "conditional_contracts": {
+    "quality_frontier": "relaxed variants appear separately when supplied",
+    "speedup": "exact comparison_class only",
+    "strong_scaling": "worker/process series appear when future experiment rows provide them"
+  },
+  "schema": "pcfg-visualization-manifest-v1",
+  "sources": {
+    "correctness": "manifest/correctness-gate.json",
+    "detailed": "profiles/threads/thread-*/run.json",
+    "headline": "runs/measured-*.json",
+    "profiler": "profiles/profiler.json",
+    "thread_scaling": "runs/measured-*.json and scaling/thread-*/measured-*.json",
+    "timeline": "profiles/scale/limit-*/trace.jsonl"
+  }
+}

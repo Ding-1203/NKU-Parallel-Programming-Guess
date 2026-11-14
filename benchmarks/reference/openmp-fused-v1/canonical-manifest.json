@@ -1,0 +1,208 @@
+{
+  "created_at_utc": "2026-07-11T13:43:08.505324+00:00",
+  "excluded": [
+    "models",
+    "RockYou",
+    "full logs",
+    "gmon.out",
+    "gprof text",
+    "trace JSONL"
+  ],
+  "files": [
+    {
+      "path": "manifest/identity.json",
+      "sha256": "3010ce46604737cd69bd5d0a244bcf9eeb4538f40386e1cf72e618608eea6733"
+    },
+    {
+      "path": "manifest/correctness-gate.json",
+      "sha256": "fbb5daad504a2fd00f25a371da6c55079f2986affc29ad463ebdd4a278789ba3"
+    },
+    {
+      "path": "manifest/profile.json",
+      "sha256": "227bcbcf99e4a1d8a9434adf73a85ae62d53102e51c9051a9f4d6251afd9b309"
+    },
+    {
+      "path": "manifest/CMakeCache.txt",
+      "sha256": "4a5995f3c3e8abb71c831fee39723b5bb60316473797f87865a8b81bc678a279"
+    },
+    {
+      "path": "manifest/compile_commands.json",
+      "sha256": "937a9ce135a3393c2c1ccdcbdf839202b270ccce46ccffe62d7bb17efbc72f67"
+    },
+    {
+      "path": "runs/correctness.json",
+      "sha256": "d1cd67d95596a97018db997de6aa654d9f22359c048668cf4042670a4cf5d1ba"
+    },
+    {
+      "path": "summary/summary.json",
+      "sha256": "7eb6a575af0dbdcd04617f5295148a923729e0cd6c8d9c926b1580def298c539"
+    },
+    {
+      "path": "summary/direct-comparisons.json",
+      "sha256": "abe3df5a24d8ddadd6abe7f70b31cbeb38157aad3d3b2e318a155b09778b5a2a"
+    },
+    {
+      "path": "summary/runs.csv",
+      "sha256": "5ef1f5e5e34128107b18bc3fd4f461634b581dbbc0ff2f8b8a78b7f093ff5f28"
+    },
+    {
+      "path": "summary/profiles.csv",
+      "sha256": "f28162edcb1f0f300cdd2c3f83f4d97066e840429521dd2ca60743e865e921b8"
+    },
+    {
+      "path": "summary/thread-scaling.csv",
+      "sha256": "8e651dce9f229d8ba886f2fee3f1b9e03446a2050cf2ac1384d878106f1cb3d6"
+    },
+    {
+      "path": "summary/thread-scaling.json",
+      "sha256": "dd731ce37397a8ed8cea3d428b1cea8dec057b864807ee3adc6ffda08a4de7b3"
+    },
+    {
+      "path": "profiles/profiler.json",
+      "sha256": "135751a2fdaf9b3d36d2b3dbd4d22b38bad409ea5e52d00c37b2bc00bc1306c0"
+    },
+    {
+      "path": "profiles/isa-check.json",
+      "sha256": "4a5d40a2c87db5d90718c6ea332a04764a1911945b633536d74902746d774b42"
+    },
+    {
+      "path": "report/baseline-bottleneck.md",
+      "sha256": "71d67ffb25879feae0db03f08e217e4e3260ef51db5a5d787ab0a55cb93f6644"
+    },
+    {
+      "path": "report/baseline-bottleneck.html",
+      "sha256": "f8a84b6955333cceb1e9566376bce5b4679232b72498c4b35b5c1768880a4ccb"
+    },
+    {
+      "path": "report/visualization-manifest.json",
+      "sha256": "00c31a8caca11d77ec0dcfeb602bb4c0d270e62c90316a0a0e9bd98e69d06816"
+    },
+    {
+      "path": "runs/measured-01.json",
+      "sha256": "7d548782935510391840cec62eecae5a5d38587a47a91fe8303e4d3fa46edd96"
+    },
+    {
+      "path": "runs/measured-02.json",
+      "sha256": "d323ed5552d29a6b8e0ac6045394858bd7340785e3553225e0f9789bc257ef6c"
+    },
+    {
+      "path": "runs/measured-03.json",
+      "sha256": "6b365cc0815bbc18725226e1dea28130a36bdee790dc79a2a3033385008596b7"
+    },
+    {
+      "path": "runs/measured-04.json",
+      "sha256": "7aec202ee2688267c83f2d352455f53bb87a79cc2aff93eb6967310d88152ea4"
+    },
+    {
+      "path": "runs/measured-05.json",
+      "sha256": "dc2d7fa0944efde32be1b22a1239d5793a815d9d3026de03994034d7aa91d2da"
+    },
+    {
+      "path": "runs/measured-06.json",
+      "sha256": "c74f0124dcc55f0090b190130616d48065f241f2d46b453c4294810d56b29e7e"
+    },
+    {
+      "path": "runs/measured-07.json",
+      "sha256": "aa645bea16da80e3fb01a03e183506218bb26989f8798781f054c545dabad735"
+    },
+    {
+      "path": "scaling/thread-1/measured-01.json",
+      "sha256": "3599f3d46de8e486f80076fa4335d75363c9f2db11257f23e75cbf98786cb51f"
+    },
+    {
+      "path": "scaling/thread-1/measured-02.json",
+      "sha256": "b6c622fa2088c475de9fca80d71827a924c15f6873845846e2c4d2cfc49bdc67"
+    },
+    {
+      "path": "scaling/thread-1/measured-03.json",
+      "sha256": "34a8eb2339002e4976a8544891b8c02108551dfc1d3e26dbf5df43b0ce11859c"
+    },
+    {
+      "path": "scaling/thread-16/measured-01.json",
+      "sha256": "f6e524916574935bc8db0264ec2a1d093d5ece86d94d43de43f702930871cac8"
+    },
+    {
+      "path": "scaling/thread-16/measured-02.json",
+      "sha256": "d7bd28e4d26dfe8490f8506d811e7484e80a7be96e0767e441ddd91f67feae7a"
+    },
+    {
+      "path": "scaling/thread-16/measured-03.json",
+      "sha256": "5f0d90123cea42e4a1f80805618c518b8cfce55b7ffc9a9cef7cf18b3e01fa2d"
+    },
+    {
+      "path": "scaling/thread-2/measured-01.json",
+      "sha256": "f06bf2a45093bd8f6c73d66defd17412aefdce53ceda8739d90f08031b51a290"
+    },
+    {
+      "path": "scaling/thread-2/measured-02.json",
+      "sha256": "9d086abe3817d609f329598a0ada815dfbe2ddf15ac78467acd587f9575fd0d1"
+    },
+    {
+      "path": "scaling/thread-2/measured-03.json",
+      "sha256": "adb0a1c5b1ad729832ce27a8fe08d97e1f7572db6412c987e956bfa6aeaefe53"
+    },
+    {
+      "path": "scaling/thread-4/measured-01.json",
+      "sha256": "d662f11fbf90ef6cf9ab2337a76fb4acf1f9fcbb234a983f86bbb709a159c885"
+    },
+    {
+      "path": "scaling/thread-4/measured-02.json",
+      "sha256": "d79500adbc8d8570dd133b6cdb4f3fda365014bb8881a6c75839231e95bbf65a"
+    },
+    {
+      "path": "scaling/thread-4/measured-03.json",
+      "sha256": "39a658dc15b9f8fff81159f5abd423105bea24d1bfdec6558d001a4375fcf493"
+    },
+    {
+      "path": "scaling/thread-1/correctness.json",
+      "sha256": "dd6c37d21a89a79ff3cc793f3ca4b98b0352e8890d948f3fee5a0fe670389cd9"
+    },
+    {
+      "path": "scaling/thread-16/correctness.json",
+      "sha256": "6b96c45d0afd59536ff7d17abbcfd31e647cd77d4d4d0419677b34b4d33bf0c9"
+    },
+    {
+      "path": "scaling/thread-2/correctness.json",
+      "sha256": "efa6f26051819412450436fb10696be6a75f9a74ed0600bae2e08131d6d7e412"
+    },
+    {
+      "path": "scaling/thread-4/correctness.json",
+      "sha256": "e8c329cc33f6cad640d33c31ce582d3a7863c390a97f936fd31335f026791250"
+    },
+    {
+      "path": "profiles/threads/thread-1/run.json",
+      "sha256": "33176827963586cdd89976db9fc223c9001135cbae74932b6af6940cf3574b4b"
+    },
+    {
+      "path": "profiles/threads/thread-8/run.json",
+      "sha256": "7fcc0306dee71f3c419e48a9ee3edb37bdcfd821fca2d1388e8f9ffdbbc3ea42"
+    },
+    {
+      "path": "figures/cumulative-exact-speedup.pdf",
+      "sha256": "e43db5e862ada4247dc05dbda4005df4d3dede5ce2d422935cf728fa1a971c17"
+    },
+    {
+      "path": "figures/guard-bottleneck.pdf",
+      "sha256": "72637d0a5e14b0fb4b8d2b8e533f520efbd4d7923220d836ecdacf74295c5cf5"
+    },
+    {
+      "path": "figures/memory-working-set.pdf",
+      "sha256": "c2ae8753938fc10ebaee2fa7061edb18d988aae5acb62214aaa32706553f9849"
+    },
+    {
+      "path": "figures/run-distribution.pdf",
+      "sha256": "3159a0d20e5c95ada61bbff8d9a3f70e66259ac29a9c304d68593e86f80036ae"
+    },
+    {
+      "path": "figures/strong-scaling.pdf",
+      "sha256": "e29494743d81a4cd43186a183953543e4b54e071adfe3b9b30a68c6df85f3bd1"
+    },
+    {
+      "path": "figures/thread-stage-composition.pdf",
+      "sha256": "ef5d445807f0382e9f45aed0d933a5985517cd71899b5aa7a855f00cc9033c3b"
+    }
+  ],
+  "rebuild_command": "./scripts/bench analyze --input benchmarks/reference/openmp-fused-v1 --compare benchmarks/reference/openmp-md5-v1 --compare benchmarks/reference/serial-md5-avx2-v1 --compare benchmarks/reference/serial-md5-fast-v1 --compare benchmarks/reference/serial-heap-v1 --compare benchmarks/reference/baseline-v1",
+  "schema": "pcfg-canonical-reference-v1",
+  "source_experiment": "/home/ding/parallel-programming/results/openmp-fused-v1"
+}

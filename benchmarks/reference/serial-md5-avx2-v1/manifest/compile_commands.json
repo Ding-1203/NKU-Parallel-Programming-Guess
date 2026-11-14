@@ -1,0 +1,52 @@
+[
+{
+  "directory": "/home/ding/parallel-programming/build/benchmark",
+  "command": "/usr/bin/c++  -I/home/ding/parallel-programming/include -O2 -DNDEBUG -march=native -Wall -Wextra -Wpedantic -std=c++17 -o CMakeFiles/pcfg_core.dir/src/consumer.cpp.o -c /home/ding/parallel-programming/src/consumer.cpp",
+  "file": "/home/ding/parallel-programming/src/consumer.cpp"
+},
+{
+  "directory": "/home/ding/parallel-programming/build/benchmark",
+  "command": "/usr/bin/c++  -I/home/ding/parallel-programming/include -O2 -DNDEBUG -march=native -Wall -Wextra -Wpedantic -std=c++17 -o CMakeFiles/pcfg_core.dir/src/md5.cpp.o -c /home/ding/parallel-programming/src/md5.cpp",
+  "file": "/home/ding/parallel-programming/src/md5.cpp"
+},
+{
+  "directory": "/home/ding/parallel-programming/build/benchmark",
+  "command": "/usr/bin/c++  -I/home/ding/parallel-programming/include -O2 -DNDEBUG -march=native -Wall -Wextra -Wpedantic -std=c++17 -march=x86-64 -o CMakeFiles/pcfg_core.dir/src/md5_avx2.cpp.o -c /home/ding/parallel-programming/src/md5_avx2.cpp",
+  "file": "/home/ding/parallel-programming/src/md5_avx2.cpp"
+},
+{
+  "directory": "/home/ding/parallel-programming/build/benchmark",
+  "command": "/usr/bin/c++  -I/home/ding/parallel-programming/include -O2 -DNDEBUG -march=native -Wall -Wextra -Wpedantic -std=c++17 -o CMakeFiles/pcfg_core.dir/src/metrics.cpp.o -c /home/ding/parallel-programming/src/metrics.cpp",
+  "file": "/home/ding/parallel-programming/src/metrics.cpp"
+},
+{
+  "directory": "/home/ding/parallel-programming/build/benchmark",
+  "command": "/usr/bin/c++  -I/home/ding/parallel-programming/include -O2 -DNDEBUG -march=native -Wall -Wextra -Wpedantic -std=c++17 -o CMakeFiles/pcfg_core.dir/src/model.cpp.o -c /home/ding/parallel-programming/src/model.cpp",
+  "file": "/home/ding/parallel-programming/src/model.cpp"
+},
+{
+  "directory": "/home/ding/parallel-programming/build/benchmark",
+  "command": "/usr/bin/c++  -I/home/ding/parallel-programming/include -O2 -DNDEBUG -march=native -Wall -Wextra -Wpedantic -std=c++17 -o CMakeFiles/pcfg_core.dir/src/model_io.cpp.o -c /home/ding/parallel-programming/src/model_io.cpp",
+  "file": "/home/ding/parallel-programming/src/model_io.cpp"
+},
+{
+  "directory": "/home/ding/parallel-programming/build/benchmark",
+  "command": "/usr/bin/c++  -I/home/ding/parallel-programming/include -O2 -DNDEBUG -march=native -Wall -Wextra -Wpedantic -std=c++17 -o CMakeFiles/pcfg_core.dir/src/sampler.cpp.o -c /home/ding/parallel-programming/src/sampler.cpp",
+  "file": "/home/ding/parallel-programming/src/sampler.cpp"
+},
+{
+  "directory": "/home/ding/parallel-programming/build/benchmark",
+  "command": "/usr/bin/c++  -I/home/ding/parallel-programming/include -O2 -DNDEBUG -march=native -Wall -Wextra -Wpedantic -std=c++17 -o CMakeFiles/pcfg_core.dir/src/sha256.cpp.o -c /home/ding/parallel-programming/src/sha256.cpp",
+  "file": "/home/ding/parallel-programming/src/sha256.cpp"
+},
+{
+  "directory": "/home/ding/parallel-programming/build/benchmark",
+  "command": "/usr/bin/c++  -I/home/ding/parallel-programming/include -O2 -DNDEBUG -march=native -Wall -Wextra -Wpedantic -std=c++17 -o CMakeFiles/pcfg.dir/src/main.cpp.o -c /home/ding/parallel-programming/src/main.cpp",
+  "file": "/home/ding/parallel-programming/src/main.cpp"
+},
+{
+  "directory": "/home/ding/parallel-programming/build/benchmark",
+  "command": "/usr/bin/c++  -I/home/ding/parallel-programming/include -O2 -DNDEBUG -march=native -Wall -Wextra -Wpedantic -std=c++17 -o CMakeFiles/pcfg_tests.dir/tests/test_main.cpp.o -c /home/ding/parallel-programming/tests/test_main.cpp",
+  "file": "/home/ding/parallel-programming/tests/test_main.cpp"
+}
+]

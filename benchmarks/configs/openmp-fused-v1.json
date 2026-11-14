@@ -1,0 +1,71 @@
+{
+  "schema": "pcfg-benchmark-config-v1",
+  "variant": "openmp-fused-v1",
+  "comparison_class": "exact",
+  "require_clean": true,
+  "configure_preset": "benchmark",
+  "build_preset": "benchmark",
+  "profile_preset": "gprof",
+  "paths": {
+    "dataset": "data/raw/rockyou.txt",
+    "model": "artifacts/models/rockyou-full.pcfg",
+    "binary": "build/benchmark/pcfg",
+    "profile_binary": "build/gprof/pcfg"
+  },
+  "reference": {
+    "dataset_sha256": "0c8a3224412f3c56240a06a4fd3d563c0f463dbf639c7cc53c8fd0e2bc137199",
+    "model_sha256": "b4b6cc82f6e99f596bfc4a26d33022b7c47b19daa6651d1f4d8e351ba692f8ef",
+    "model_records": 32575499
+  },
+  "correctness": {
+    "test_data": "data/raw/rockyou.txt",
+    "test_limit": 1000000,
+    "limit": 10000000,
+    "batch_size": 1000000,
+    "expected": {
+      "generated": 10000000,
+      "hash_guard": 3208840153712495241,
+      "sig1": 17743404526985606959,
+      "sig2": 10114221552619739567,
+      "candidate_hits": 341018,
+      "cracked_unique": 341018
+    }
+  },
+  "headline": {
+    "limit": 10000000,
+    "batch_size": 1000000,
+    "cpu_set": "0,2,4,6,8,10,12,14",
+    "threads": 8,
+    "omp_places": "{0},{2},{4},{6},{8},{10},{12},{14}",
+    "warmups": 2,
+    "repetitions": 7,
+    "cv_threshold": 0.05,
+    "bootstrap_seed": 4526,
+    "bootstrap_samples": 10000
+  },
+  "scaling": {
+    "warmups": 1,
+    "repetitions": 3,
+    "points": [
+      {"threads": 1, "cpu_set": "0", "omp_places": "{0}"},
+      {"threads": 2, "cpu_set": "0,2", "omp_places": "{0},{2}"},
+      {"threads": 4, "cpu_set": "0,2,4,6", "omp_places": "{0},{2},{4},{6}"},
+      {"threads": 8, "cpu_set": "0,2,4,6,8,10,12,14", "omp_places": "{0},{2},{4},{6},{8},{10},{12},{14}"},
+      {"threads": 16, "cpu_set": "0-15", "omp_places": "{0},{1},{2},{3},{4},{5},{6},{7},{8},{9},{10},{11},{12},{13},{14},{15}", "controller_sharing": "unavoidable"}
+    ]
+  },
+  "profiling": {
+    "trace_interval": 100000,
+    "scale_limits": [],
+    "scale_warmups": 0,
+    "scale_repetitions": 0,
+    "batch_sizes": [],
+    "batch_repetitions": 0,
+    "thread_details": [1, 8],
+    "thread_trace": false,
+    "gprof_threads": 1,
+    "gprof_limit": 10000000,
+    "strace": false,
+    "strace_limit": 1000000
+  }
+}

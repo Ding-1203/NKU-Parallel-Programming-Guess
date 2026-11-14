@@ -1,0 +1,75 @@
+{
+  "version": 3,
+  "cmakeMinimumRequired": {
+    "major": 3,
+    "minor": 16,
+    "patch": 0
+  },
+  "configurePresets": [
+    {
+      "name": "benchmark",
+      "displayName": "Fair benchmark (-O2, native, assertions off)",
+      "generator": "Unix Makefiles",
+      "binaryDir": "${sourceDir}/build/benchmark",
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Release",
+        "CMAKE_CXX_FLAGS_RELEASE": "-O2 -DNDEBUG -march=native",
+        "CMAKE_EXPORT_COMPILE_COMMANDS": "ON",
+        "BUILD_TESTING": "ON"
+      }
+    },
+    {
+      "name": "gprof",
+      "displayName": "Profiling build (not valid for speed comparisons)",
+      "inherits": "benchmark",
+      "binaryDir": "${sourceDir}/build/gprof",
+      "cacheVariables": {
+        "CMAKE_CXX_FLAGS_RELEASE": "-O2 -DNDEBUG -march=native -pg",
+        "CMAKE_EXE_LINKER_FLAGS": "-pg",
+        "CMAKE_SHARED_LINKER_FLAGS": "-pg"
+      }
+    },
+    {
+      "name": "mpi-benchmark",
+      "displayName": "MPI benchmark (-O2, native, assertions off)",
+      "inherits": "benchmark",
+      "binaryDir": "${sourceDir}/build/mpi-benchmark",
+      "cacheVariables": {
+        "PCFG_ENABLE_MPI": "ON"
+      }
+    }
+  ],
+  "buildPresets": [
+    {
+      "name": "benchmark",
+      "configurePreset": "benchmark",
+      "jobs": 4
+    },
+    {
+      "name": "gprof",
+      "configurePreset": "gprof",
+      "jobs": 4
+    },
+    {
+      "name": "mpi-benchmark",
+      "configurePreset": "mpi-benchmark",
+      "jobs": 4
+    }
+  ],
+  "testPresets": [
+    {
+      "name": "benchmark",
+      "configurePreset": "benchmark",
+      "output": {
+        "outputOnFailure": true
+      }
+    },
+    {
+      "name": "mpi-benchmark",
+      "configurePreset": "mpi-benchmark",
+      "output": {
+        "outputOnFailure": true
+      }
+    }
+  ]
+}

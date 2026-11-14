@@ -1,0 +1,518 @@
+{
+  "bottleneck": {
+    "algorithm_modified": true,
+    "next_target": "replace ordered vector queue movement while preserving exact ordering"
+  },
+  "correctness": {
+    "fields": {
+      "candidate_hits": 341018,
+      "cracked_unique": 341018,
+      "generated": 10000000,
+      "hash_guard": 3208840153712495241,
+      "sig1": 17743404526985606959,
+      "sig2": 10114221552619739567
+    },
+    "measured_hash_guard_consistent": true,
+    "passed": true
+  },
+  "generated_at_utc": "2026-07-11T09:56:05.053133+00:00",
+  "headline": {
+    "batch_size": 1000000,
+    "core_total": {
+      "bootstrap_95_ci": [
+        1.323553168,
+        1.337339557
+      ],
+      "count": 7,
+      "cv": 0.018716722073885497,
+      "iqr": 0.009694185000000077,
+      "mad": 0.006589374000000037,
+      "max": 1.360308389,
+      "mean": 1.3269727071428572,
+      "median": 1.330142542,
+      "min": 1.277697821,
+      "outliers": [
+        1.277697821,
+        1.360308389
+      ],
+      "q1": 1.325317957,
+      "q3": 1.335012142,
+      "range": 0.082610568,
+      "stddev": 0.02483657935922431
+    },
+    "cpu_set": "0",
+    "cv_threshold": 0.03,
+    "end_to_end": {
+      "bootstrap_95_ci": [
+        2.460299321,
+        2.582770922
+      ],
+      "count": 7,
+      "cv": 0.026920381589492358,
+      "iqr": 0.10345103550000001,
+      "mad": 0.03374771100000018,
+      "max": 2.604925214,
+      "mean": 2.531064863,
+      "median": 2.571177503,
+      "min": 2.433379921,
+      "outliers": [],
+      "q1": 2.4752673329999997,
+      "q3": 2.5787183684999997,
+      "range": 0.17154529300000032,
+      "stddev": 0.0681372319397162
+    },
+    "limit": 10000000,
+    "load_model": {
+      "bootstrap_95_ci": [
+        1.155677672,
+        1.259213401
+      ],
+      "count": 7,
+      "cv": 0.045304438083868095,
+      "iqr": 0.09271238100000012,
+      "mad": 0.05077678800000007,
+      "max": 1.267580903,
+      "mean": 1.2040873504285714,
+      "median": 1.210863806,
+      "min": 1.133212602,
+      "outliers": [],
+      "q1": 1.157882345,
+      "q3": 1.250594726,
+      "range": 0.13436830100000008,
+      "stddev": 0.05455050081506
+    },
+    "stable": true,
+    "throughput": {
+      "bootstrap_95_ci": [
+        7477532.499249927,
+        7555419.942147727
+      ],
+      "count": 7,
+      "cv": 0.019046735982856996,
+      "iqr": 54781.20630086586,
+      "mad": 37428.68613991793,
+      "max": 7826576.703538105,
+      "mean": 7538252.852798575,
+      "median": 7517991.256007809,
+      "min": 7351274.226391615,
+      "outliers": [
+        7826576.703538105,
+        7351274.226391615
+      ],
+      "q1": 7490591.34276269,
+      "q3": 7545372.549063556,
+      "range": 475302.47714648955,
+      "stddev": 143579.11185927302
+    },
+    "warmups": 2
+  },
+  "identity": {
+    "binary_sha256": "ace970d998a07df99144819f8ed4fe19fd56555694f56f384838674cd31c0cbe",
+    "comparison_class": "exact",
+    "dataset_sha256": "0c8a3224412f3c56240a06a4fd3d563c0f463dbf639c7cc53c8fd0e2bc137199",
+    "git_dirty": false,
+    "git_sha": "0dd3a2df0f9f48736d905e94a2c7ccf3397ff984",
+    "model_sha256": "b4b6cc82f6e99f596bfc4a26d33022b7c47b19daa6651d1f4d8e351ba692f8ef",
+    "variant": "serial-md5-fast-v1"
+  },
+  "profiler": {
+    "gprof": {
+      "binary_sha256": "ab15d2589269813a54a3b5104a5dc8e53879284edd461e89aeb2b0a51bf05a1e",
+      "limit": 10000000,
+      "top_functions": [
+        {
+          "calls": 10000000,
+          "cumulative_seconds": 1.09,
+          "name": "pcfg::(anonymous namespace)::compress_block(std::array<unsigned int, 4ul>&, unsigned char const*)",
+          "percent_time": 45.8,
+          "self_ms_per_call": 0.0,
+          "self_seconds": 1.09,
+          "total_ms_per_call": 0.0
+        },
+        {
+          "calls": 2704922,
+          "cumulative_seconds": 1.71,
+          "name": "pcfg::Sha256::transform(unsigned char const*)",
+          "percent_time": 26.05,
+          "self_ms_per_call": 0.0,
+          "self_seconds": 0.62,
+          "total_ms_per_call": 0.0
+        },
+        {
+          "calls": 1,
+          "cumulative_seconds": 2.05,
+          "name": "pcfg::ModelStore::load(std::filesystem::__cxx11::path const&)",
+          "percent_time": 14.29,
+          "self_ms_per_call": 0.34,
+          "self_seconds": 0.34,
+          "total_ms_per_call": 0.96
+        },
+        {
+          "calls": 10000000,
+          "cumulative_seconds": 2.23,
+          "name": "pcfg::md5(std::basic_string_view<char, std::char_traits<char> >)",
+          "percent_time": 7.56,
+          "self_ms_per_call": 0.0,
+          "self_seconds": 0.18,
+          "total_ms_per_call": 0.0
+        },
+        {
+          "calls": 272,
+          "cumulative_seconds": 2.34,
+          "name": "pcfg::SerialSampler::generate_range(pcfg::SearchState const&, unsigned long, unsigned long, std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >&) const",
+          "percent_time": 4.62,
+          "self_ms_per_call": 0.0,
+          "self_seconds": 0.11,
+          "total_ms_per_call": 0.0
+        },
+        {
+          "calls": 79003,
+          "cumulative_seconds": 2.36,
+          "name": "pcfg::SerialSampler::probability(pcfg::SearchState const&) const",
+          "percent_time": 0.84,
+          "self_ms_per_call": 0.0,
+          "self_seconds": 0.02,
+          "total_ms_per_call": 0.0
+        },
+        {
+          "calls": 10,
+          "cumulative_seconds": 2.38,
+          "name": "pcfg::CandidateConsumer::consume(std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > const&, unsigned long)",
+          "percent_time": 0.84,
+          "self_ms_per_call": 0.0,
+          "self_seconds": 0.02,
+          "total_ms_per_call": 0.13
+        },
+        {
+          "calls": 964261,
+          "cumulative_seconds": 2.38,
+          "name": "std::__cxx11::basic_stringbuf<char, std::char_traits<char>, std::allocator<char> >::~basic_stringbuf()",
+          "percent_time": 0.0,
+          "self_ms_per_call": 0.0,
+          "self_seconds": 0.0,
+          "total_ms_per_call": 0.0
+        },
+        {
+          "calls": 964007,
+          "cumulative_seconds": 2.38,
+          "name": "pcfg::Model::segment_index(pcfg::SegmentKey const&) const",
+          "percent_time": 0.0,
+          "self_ms_per_call": 0.0,
+          "self_seconds": 0.0,
+          "total_ms_per_call": 0.0
+        },
+        {
+          "calls": 964007,
+          "cumulative_seconds": 2.38,
+          "name": "pcfg::Model::segment(pcfg::SegmentKey const&) const",
+          "percent_time": 0.0,
+          "self_ms_per_call": 0.0,
+          "self_seconds": 0.0,
+          "total_ms_per_call": 0.0
+        },
+        {
+          "calls": 79266,
+          "cumulative_seconds": 2.38,
+          "name": "pcfg::SerialSampler::pop()",
+          "percent_time": 0.0,
+          "self_ms_per_call": 0.0,
+          "self_seconds": 0.0,
+          "total_ms_per_call": 0.0
+        },
+        {
+          "calls": 544,
+          "cumulative_seconds": 2.38,
+          "name": "pcfg::SerialSampler::last_segment_size(pcfg::SearchState const&) const",
+          "percent_time": 0.0,
+          "self_ms_per_call": 0.0,
+          "self_seconds": 0.0,
+          "total_ms_per_call": 0.0
+        },
+        {
+          "calls": 412,
+          "cumulative_seconds": 2.38,
+          "name": "pcfg::SegmentKey::operator<(pcfg::SegmentKey const&) const",
+          "percent_time": 0.0,
+          "self_ms_per_call": 0.0,
+          "self_seconds": 0.0,
+          "total_ms_per_call": 0.0
+        },
+        {
+          "calls": 300,
+          "cumulative_seconds": 2.38,
+          "name": "pcfg::SegmentKey::operator==(pcfg::SegmentKey const&) const",
+          "percent_time": 0.0,
+          "self_ms_per_call": 0.0,
+          "self_seconds": 0.0,
+          "total_ms_per_call": 0.0
+        },
+        {
+          "calls": 282,
+          "cumulative_seconds": 2.38,
+          "name": "std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::reserve(unsigned long)",
+          "percent_time": 0.0,
+          "self_ms_per_call": 0.0,
+          "self_seconds": 0.0,
+          "total_ms_per_call": 0.0
+        },
+        {
+          "calls": 262,
+          "cumulative_seconds": 2.38,
+          "name": "pcfg::SerialSampler::expand(pcfg::SearchState const&)",
+          "percent_time": 0.0,
+          "self_ms_per_call": 0.0,
+          "self_seconds": 0.0,
+          "total_ms_per_call": 0.0
+        },
+        {
+          "calls": 254,
+          "cumulative_seconds": 2.38,
+          "name": "std::vector<pcfg::SegmentValue, std::allocator<pcfg::SegmentValue> >::reserve(unsigned long)",
+          "percent_time": 0.0,
+          "self_ms_per_call": 0.0,
+          "self_seconds": 0.0,
+          "total_ms_per_call": 0.0
+        },
+        {
+          "calls": 241,
+          "cumulative_seconds": 2.38,
+          "name": "pcfg::SerialSampler::insert(pcfg::SearchState)",
+          "percent_time": 0.0,
+          "self_ms_per_call": 0.0,
+          "self_seconds": 0.0,
+          "total_ms_per_call": 0.0
+        },
+        {
+          "calls": 203,
+          "cumulative_seconds": 2.38,
+          "name": "void std::vector<pcfg::SegmentKey, std::allocator<pcfg::SegmentKey> >::_M_realloc_insert<pcfg::SegmentKey>(__gnu_cxx::__normal_iterator<pcfg::SegmentKey*, std::vector<pcfg::SegmentKey, std::allocator<pcfg::SegmentKey> > >, pcfg::SegmentKey&&)",
+          "percent_time": 0.0,
+          "self_ms_per_call": 0.0,
+          "self_seconds": 0.0,
+          "total_ms_per_call": 0.0
+        },
+        {
+          "calls": 11,
+          "cumulative_seconds": 2.38,
+          "name": "(anonymous namespace)::print_usage(char const*)",
+          "percent_time": 0.0,
+          "self_ms_per_call": 0.0,
+          "self_seconds": 0.0,
+          "total_ms_per_call": 0.0
+        },
+        {
+          "calls": 10,
+          "cumulative_seconds": 2.38,
+          "name": "pcfg::SerialSampler::sample_batch(unsigned long)",
+          "percent_time": 0.0,
+          "self_ms_per_call": 0.0,
+          "self_seconds": 0.0,
+          "total_ms_per_call": 0.01
+        },
+        {
+          "calls": 10,
+          "cumulative_seconds": 2.38,
+          "name": "pcfg::SerialSampler::empty() const",
+          "percent_time": 0.0,
+          "self_ms_per_call": 0.0,
+          "self_seconds": 0.0,
+          "total_ms_per_call": 0.0
+        },
+        {
+          "calls": 5,
+          "cumulative_seconds": 2.38,
+          "name": "(anonymous namespace)::require_value(int, char**, int&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)",
+          "percent_time": 0.0,
+          "self_ms_per_call": 0.0,
+          "self_seconds": 0.0,
+          "total_ms_per_call": 0.0
+        },
+        {
+          "calls": 5,
+          "cumulative_seconds": 2.38,
+          "name": "std::unique_ptr<std::filesystem::__cxx11::path::_List::_Impl, std::filesystem::__cxx11::path::_List::_Impl_deleter>::~unique_ptr()",
+          "percent_time": 0.0,
+          "self_ms_per_call": 0.0,
+          "self_seconds": 0.0,
+          "total_ms_per_call": 0.0
+        },
+        {
+          "calls": 3,
+          "cumulative_seconds": 2.38,
+          "name": "pcfg::instrumentation_name[abi:cxx11](pcfg::InstrumentationMode)",
+          "percent_time": 0.0,
+          "self_ms_per_call": 0.0,
+          "self_seconds": 0.0,
+          "total_ms_per_call": 0.0
+        },
+        {
+          "calls": 3,
+          "cumulative_seconds": 2.38,
+          "name": "void std::vector<unsigned char, std::allocator<unsigned char> >::_M_realloc_insert<unsigned char>(__gnu_cxx::__normal_iterator<unsigned char*, std::vector<unsigned char, std::allocator<unsigned char> > >, unsigned char&&)",
+          "percent_time": 0.0,
+          "self_ms_per_call": 0.0,
+          "self_seconds": 0.0,
+          "total_ms_per_call": 0.0
+        },
+        {
+          "calls": 2,
+          "cumulative_seconds": 2.38,
+          "name": "(anonymous namespace)::write_trace_record(std::basic_ofstream<char, std::char_traits<char> >&, pcfg::SerialSampler const&, pcfg::RunMetrics const&, std::chrono::time_point<std::chrono::_V2::steady_clock, std::chrono::duration<long, std::ratio<1l, 1000000000l> > >)",
+          "percent_time": 0.0,
+          "self_ms_per_call": 0.0,
+          "self_seconds": 0.0,
+          "total_ms_per_call": 0.0
+        },
+        {
+          "calls": 2,
+          "cumulative_seconds": 2.38,
+          "name": "(anonymous namespace)::parse_u64(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)",
+          "percent_time": 0.0,
+          "self_ms_per_call": 0.0,
+          "self_seconds": 0.0,
+          "total_ms_per_call": 0.0
+        },
+        {
+          "calls": 1,
+          "cumulative_seconds": 2.38,
+          "name": "(anonymous namespace)::run_sample(int, char**)",
+          "percent_time": 0.0,
+          "self_ms_per_call": 0.0,
+          "self_seconds": 0.0,
+          "total_ms_per_call": 2.38
+        },
+        {
+          "calls": 1,
+          "cumulative_seconds": 2.38,
+          "name": "pcfg::SerialSampler::SerialSampler(pcfg::Model const&, pcfg::InstrumentationMode)",
+          "percent_time": 0.0,
+          "self_ms_per_call": 0.0,
+          "self_seconds": 0.0,
+          "total_ms_per_call": 0.02
+        }
+      ]
+    },
+    "perf": {
+      "status": "unavailable"
+    },
+    "schema": "pcfg-profiler-summary-v1",
+    "strace": {
+      "status": "disabled"
+    }
+  },
+  "profiles": {
+    "batch": [],
+    "scale": [
+      {
+        "candidate_bytes": 600000.0,
+        "core_total": 0.023705956,
+        "end_to_end": 1.007873021,
+        "expand_count": 0.0,
+        "generate": 0.001899274,
+        "hash": 0.01156129,
+        "hash_ns_per_candidate": 115.6129,
+        "initial_queue_size": 78762.0,
+        "insert_count": 78762.0,
+        "limit": 100000,
+        "load_model": 0.984163255,
+        "max_queue_size": 78762.0,
+        "pop_count": 1.0,
+        "queue_expand_insert": 0.0,
+        "queue_pop": 5.65e-07,
+        "queue_runtime": 5.65e-07,
+        "queue_runtime_share": 2.3833672854197486e-05,
+        "repetitions": 1,
+        "sampler_init": 0.009700115,
+        "sampler_init_share": 0.40918472134175904,
+        "shifted_on_insert": 0.0,
+        "shifted_on_pop": 0.0,
+        "throughput": 4218349.177734069,
+        "unattributed": 0.0005447120000000027,
+        "verify": 0.0
+      },
+      {
+        "candidate_bytes": 7442213.0,
+        "core_total": 0.173391963,
+        "end_to_end": 1.133619243,
+        "expand_count": 2.0,
+        "generate": 0.012393338,
+        "hash": 0.147628683,
+        "hash_ns_per_candidate": 147.628683,
+        "initial_queue_size": 78762.0,
+        "insert_count": 78762.0,
+        "limit": 1000000,
+        "load_model": 0.960222971,
+        "max_queue_size": 78762.0,
+        "pop_count": 3.0,
+        "queue_expand_insert": 8.6e-08,
+        "queue_pop": 1.5608e-05,
+        "queue_runtime": 1.5694e-05,
+        "queue_runtime_share": 9.051169228645273e-05,
+        "repetitions": 1,
+        "sampler_init": 0.009977878,
+        "sampler_init_share": 0.057545216210511445,
+        "shifted_on_insert": 0.0,
+        "shifted_on_pop": 0.0,
+        "throughput": 5767279.997862415,
+        "unattributed": 0.0033763699999999897,
+        "verify": 0.0
+      },
+      {
+        "candidate_bytes": 78286326.0,
+        "core_total": 1.333898509,
+        "end_to_end": 2.616564634,
+        "expand_count": 262.0,
+        "generate": 0.078122661,
+        "hash": 1.222199429,
+        "hash_ns_per_candidate": 122.2199429,
+        "initial_queue_size": 78762.0,
+        "insert_count": 79003.0,
+        "limit": 10000000,
+        "load_model": 1.282660839,
+        "max_queue_size": 78762.0,
+        "pop_count": 263.0,
+        "queue_expand_insert": 4.9729e-05,
+        "queue_pop": 0.000162625,
+        "queue_runtime": 0.000212354,
+        "queue_runtime_share": 0.0001591980188651669,
+        "repetitions": 1,
+        "sampler_init": 0.010124366,
+        "sampler_init_share": 0.007590057213265841,
+        "shifted_on_insert": 0.0,
+        "shifted_on_pop": 0.0,
+        "throughput": 7496822.233872068,
+        "unattributed": 0.02323969899999989,
+        "verify": 0.0
+      }
+    ]
+  },
+  "quality_throughput": [
+    {
+      "comparison_class": "exact",
+      "cracked_unique": 341018,
+      "quality_delta": 0,
+      "throughput": 7517991.256007809,
+      "variant": "serial-md5-fast-v1"
+    }
+  ],
+  "schema": "pcfg-benchmark-summary-v1",
+  "speedup_exact": [
+    {
+      "ci": [
+        1.0,
+        1.0
+      ],
+      "comparison_class": "exact",
+      "speedup": 1.0,
+      "variant": "serial-md5-fast-v1"
+    }
+  ],
+  "strong_scaling": [
+    {
+      "efficiency": 1.0,
+      "speedup": 1.0,
+      "variant": "serial-md5-fast-v1",
+      "workers": 1
+    }
+  ]
+}
